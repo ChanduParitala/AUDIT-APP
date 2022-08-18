@@ -2,12 +2,7 @@ package com.mfpe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-/**
- * 
- * @author Prakash  
- * This is the application class for JwtAuthentication Micro-service
- * @
- */
+
 @SpringBootApplication
 public class AuditAuthorizationApplication {
 	
