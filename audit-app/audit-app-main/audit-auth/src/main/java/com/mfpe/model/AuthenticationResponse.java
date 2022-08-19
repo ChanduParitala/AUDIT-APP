@@ -16,11 +16,5 @@ public class AuthenticationResponse {
 	private String name;
 	private String projectName;
 	private boolean isValid;
-	public AuthenticationResponse(String name, String projectName, boolean isValid) {
-		super();
-		this.name = name;
-		this.projectName = projectName;
-		this.isValid = isValid;
-	}
 
 }
