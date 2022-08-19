@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/audit-app-chandan-auth:1"
+        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/auth-api:1"
         LoadBalancerInfo:
           ContainerName: "audit-app-chandan-auth"
           ContainerPort: "8100"

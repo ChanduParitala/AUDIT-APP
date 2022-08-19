@@ -7,9 +7,10 @@ phases:
     commands:
     - echo Logging in to Amazon ECR...
     - aws --version
-    - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-    - TAG="$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | head -c 8)"
-    - IMAGE_URI=${REPOSITORY_URI}:${TAG}
+    - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 860061945305.dkr.ecr.us-east-1.amazonaws.com
+    - IMAGE_NAME=audit-app-chandan-mfpe
+    - IMAGE_URI=860061945305.dkr.ecr.us-east-1.amazonaws.com/audit-app-chandan-mfpe:latest
+    - CONTAINER_NAME=audit-app-chandan-mfpe
   build:
     commands:
     - echo Build started on `date`
